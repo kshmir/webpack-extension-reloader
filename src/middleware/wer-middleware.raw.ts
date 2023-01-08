@@ -6,7 +6,7 @@
 /*  external argument must be provided using it       */
 /* -------------------------------------------------- */
 (function() {
-  try{window}catch{var window:any;}
+  try{window}catch{var window:any = self?.window;}
 
   const injectionContext = {browser: null};
   (function() {
